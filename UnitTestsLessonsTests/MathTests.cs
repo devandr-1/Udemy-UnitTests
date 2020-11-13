@@ -31,5 +31,13 @@ namespace UnitTestsLessonsTests
             int result = _math.Max(a, b);
             Assert.AreEqual(expected, result);
         }
+
+        [Test]
+        public void GetOddNumbers_LimitIsGreaterThanZero_ReturnOddNumbersUpToLimit()
+        {
+            var result = _math.GetOddNumbers(5);
+
+            Assert.That(result, Is.EquivalentTo(new[] { 1, 3, 5 }));
+        }
     }
 }
