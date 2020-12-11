@@ -1,5 +1,4 @@
-﻿using System;
-namespace UnitTestsLessons
+﻿namespace UnitTestsLessons
 {
     public class Reservation
     {
